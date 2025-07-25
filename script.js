@@ -34,16 +34,13 @@ function success(position) {
   // Initialize Leaflet Map
   map = L.map("map").setView([lat, lon], 13);
 
-  // Add OpenStreetMap tiles
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: "&copy; OpenStreetMap contributors",
   }).addTo(map);
 
-  // Add marker at user location
   const marker = L.marker([lat, lon]).addTo(map);
-  marker.bindPopup("📍 You are here").openPopup();
+  marker.bindPopup("You are here").openPopup();
 
-  // Continue to get weather
   getWeather(lat, lon);
 }
 
