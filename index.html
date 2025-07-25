@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Weather Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">Smart Weather Dashboard</h1>
+    <div class="container">
+      <div
+        id="map"
+        style="margin-top: 20px; border-radius: 10px"
+      ></div>
+      <div class="weatherContainer">  
+        <div id="weather">
+          <p id="status">Fetching weather data...</p>
+          <p><strong>Location:</strong> <span id="location"></span></p>
+          <p><strong>Temperature:</strong> <span id="temperature"></span></p>
+          <p><strong>Condition:</strong> <span id="condition"></span></p>
+        </div>
+        <canvas id="tempChart" width="300" height="150"></canvas>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  </body>
+</html>

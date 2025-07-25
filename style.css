@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  color: #333;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 50px;
+}
+#weather p{
+  font-size: clamp(0.8rem, 1vw, 2.5rem);
+}
+canvas {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#map {
+  flex: 1 1 50px;
+  width: 65%;
+  border: 1px solid #ccc;
+  height: 500px;
+}
+@media(max-width: 450px){
+  .container{
+    row-gap: 50px;
+  }
+  #map{
+    height: 300px;
+  }
+}
